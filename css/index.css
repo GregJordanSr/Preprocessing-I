@@ -143,6 +143,7 @@ header {
   margin: 20px 0;
   padding: 20px 0;
   display: flex;
+  justify-content: flex-end;
 }
 @media (max-width: 515px) {
   header {
@@ -159,7 +160,7 @@ header nav a {
   text-decoration: none;
   color: #b0b0b0;
 }
-header nav a .first-anchor {
+header nav .first-anchor {
   margin-left: 0;
 }
 header nav :hover {
@@ -170,4 +171,14 @@ header nav :hover {
   header nav {
     margin-left: 0;
   }
+}
+.top-container {
+  background: lightblue;
+  height: 50%;
+  width: 50%;
+}
+.top-container .image {
+  height: 30%;
+  width: 30%;
+  margin-top: 2%;
 }
