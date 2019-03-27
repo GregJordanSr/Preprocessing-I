@@ -137,13 +137,11 @@ body {
 .container {
   max-width: 600px;
   margin: 0 auto;
-  font-size: 1.6rem;
 }
 header {
   margin: 20px 0;
   padding: 20px 0;
-  display: flex;
-  justify-content: flex-end;
+  align-content: center;
 }
 @media (max-width: 515px) {
   header {
@@ -151,34 +149,48 @@ header {
     align-items: center;
   }
 }
-header nav {
-  margin-left: 62px;
+header .nav-sec {
+  display: flex;
+  justify-content: space-evenly;
 }
-header nav a {
-  margin-left: 20px;
-  font-size: 1.1rem;
-  text-decoration: none;
-  color: #b0b0b0;
+header .nav-sec a {
+  color: rgba(29, 14, 14, 0.2);
+  font-weight: 500;
+  text-shadow: none;
+  font-size: 1rem;
 }
-header nav .first-anchor {
-  margin-left: 0;
+header .nav-sec a::before {
+  color: #fff;
+  content: attr(data-hover);
+  position: absolute;
+  transition: transform 0.3s, opacity 0.3s;
 }
-header nav :hover {
-  text-decoration: underline;
-  color: black;
+header .nav-sec a:hover::before,
+header .nav-sec a:focus::before {
+  transform: scale(0.9);
+  opacity: 0;
 }
 @media (max-width: 515px) {
-  header nav {
+  header .nav-sec {
     margin-left: 0;
   }
 }
-.top-container {
-  background: lightblue;
-  height: 50%;
-  width: 50%;
+.top-content {
+  background: lightgray;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 10%;
 }
-.top-container .image {
+.top-content .image {
   height: 30%;
   width: 30%;
-  margin-top: 2%;
+  margin: 2% 2% 2% 0;
+}
+.top-content h1 {
+  font-size: 1.3rem;
+  margin: 0 2%;
+}
+.top-content .btn {
+  padding: 1%;
+  border-radius: 2%;
 }
