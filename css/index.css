@@ -179,27 +179,38 @@ header .nav-sec a:focus::before {
   background: lightgray;
   height: 100%;
   width: 100%;
-  margin-bottom: 10%;
+  margin-bottom: 3%;
 }
 .top-container .top-content .image {
   height: 30%;
   width: 30%;
-  margin: 2% 2% 2% 0;
+  margin: 2%;
 }
 .top-container .top-content h1,
 .top-container .top-content h2 {
   margin: 0 2% 2% 2%;
 }
-.top-container .top-content h2 {
-  margin: 0 2% 2% 2%;
-}
-.top-container .top-content p {
-  font-size: 0.8rem;
-  margin: 2% 2% 10% 0;
-  margin: 0 0 0 2%;
-}
 .top-container .top-content .btn {
   padding: 1%;
   border-radius: 27%;
+  margin: 0 2% 4%;
+}
+.top-container p,
+.top-container ul {
+  font-size: 0.8rem;
   margin: 2%;
+  padding-right: 20px;
+}
+.middle-content {
+  display: flex;
+  width: 50%;
+}
+h1 {
+  font-size: 2rem;
+  font-family: sans-serif;
+}
+@media (max-width: 515px) {
+  h1 {
+    margin-bottom: 20px;
+  }
 }
