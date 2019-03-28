@@ -175,22 +175,31 @@ header .nav-sec a:focus::before {
     margin-left: 0;
   }
 }
-.top-content {
+.top-container .top-content {
   background: lightgray;
   height: 100%;
   width: 100%;
   margin-bottom: 10%;
 }
-.top-content .image {
+.top-container .top-content .image {
   height: 30%;
   width: 30%;
   margin: 2% 2% 2% 0;
 }
-.top-content h1 {
-  font-size: 1.3rem;
-  margin: 0 2%;
+.top-container .top-content h1,
+.top-container .top-content h2 {
+  margin: 0 2% 2% 2%;
 }
-.top-content .btn {
+.top-container .top-content h2 {
+  margin: 0 2% 2% 2%;
+}
+.top-container .top-content p {
+  font-size: 0.8rem;
+  margin: 2% 2% 10% 0;
+  margin: 0 0 0 2%;
+}
+.top-container .top-content .btn {
   padding: 1%;
-  border-radius: 2%;
+  border-radius: 27%;
+  margin: 2%;
 }
